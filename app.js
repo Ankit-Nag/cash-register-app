@@ -1,9 +1,12 @@
-var btnBill = document.querySelector("#btn-billAmt");
 var btnPaid = document.querySelector("#btn-billPaid");
 var inputBill = document.querySelector("#billAmt");
 var inputPaid = document.querySelector("#billPaid");
 var output = document.querySelector(".output-box");
 var statusBar = document.querySelector(".status-bar");
+
+//how to reset the array for each iteration?
+//animate status bar somehow
+//make buttons look better
 
 var billAmount = 0,
     billPaid = 0;
@@ -40,7 +43,6 @@ var notes = [{
 function billEventHandler() {
     billAmount = inputBill.value;
     output.innerText = "";
-
 }
 
 function paidEventHandler() {
@@ -107,8 +109,9 @@ function disableHandler() {
         inputPaid.disabled = false;
         btnPaid.disabled = false;
     }
+    billEventHandler();
 }
 
 inputBill.addEventListener("input", disableHandler);
-btnBill.addEventListener("click", billEventHandler);
+// btnBill.addEventListener("click", billEventHandler);
 btnPaid.addEventListener("click", paidEventHandler);
