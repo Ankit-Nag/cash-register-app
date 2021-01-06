@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap');
+
 @media screen and (max-width: 1280px) {
     .mainContainer {
         max-width: 80vw;
@@ -7,19 +8,21 @@
 
 :root {
     --almost-black: #17191D;
-    --black: #060709; 
+    --black: #060709;
     --red: #B01712;
     --dark-red: #550F0D;
     --light-grey: #A49FA1;
-    --dark-grey: #3D3F41; 
-    --ultradark-grey: rgba(44,44,46,0.75);
+    --dark-grey: #3D3F41;
+    --ultradark-grey: rgba(44, 44, 46, 0.75);
+    --T-ultradark-grey: rgba(1, 1, 2, 0.25);
     --grey: #887F81;
-    --silver: rgb(229,229,234);
-    --white: rgb(242,242,247);
+    --silver: rgb(229, 229, 234);
+    --white: rgb(242, 242, 247);
     --green: #69a838;
+    --blue: #8ca1b8;
 }
 
-::placeholder{
+::placeholder {
     color: var(--grey);
     opacity: 50%;
 }
@@ -33,16 +36,16 @@ html {
     padding: 1rem;
 }
 
-h1{
+h1 {
     font-family: 'Open Sans', sans-serif;
     color: var(--white);
 }
 
-body{
+body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-hr{
+hr {
     margin: 1rem;
     border: 1px groove var(--light-grey);
 }
@@ -61,13 +64,13 @@ hr{
     box-shadow: 2px 2px 10px var(--black);
 }
 
-.img-header{
+.img-header {
     max-width: 50vw;
     max-height: 50vh;
     opacity: 80%;
 }
 
-.input-box{
+.input-box {
     padding: 0.5rem;
     border-radius: 0.5rem;
     border: none;
@@ -76,75 +79,80 @@ hr{
     background-color: var(--dark-grey);
     background: linear-gradient(135deg, var(--dark-grey) 0%, var(--ultradark-grey) 100%);
     color: var(--silver);
-    box-shadow: 1px 1px 5px 2px var(--almost-black) ;
+    box-shadow: 1px 1px 5px 2px var(--almost-black);
     transition: all 250ms ease-in-out;
 }
 
-.input-box:focus{
+.input-box:focus {
     caret-color: var(--light-grey);
     outline-style: none;
     background-color: var(--grey);
-    box-shadow: 1px 1px 2px 1px var(--almost-black) ;
+    box-shadow: 1px 1px 2px 1px var(--almost-black);
     transition: all 250ms ease-in-out;
 }
 
-.input-box:hover{
+.input-box:hover {
     box-shadow: 0px 0px 3px 2px var(--ultradark-grey);
     transition: all 250 ease-in-out;
 }
 
-.input-box:disabled{
+.input-box:disabled {
     opacity: 25%;
     transition: all 250ms ease-in-out;
 }
 
-.btn-enter{
-    padding: 0.45rem 0.75rem;
+.btn-enter {
+    padding: 0.55rem 0.8rem 0.45rem 0.9rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: var(--silver);
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     background-color: var(--dark-grey);
     background: linear-gradient(135deg, var(--dark-grey) 0%, var(--ultradark-grey) 100%);
     box-shadow: 1px 1px 5px 2px var(--almost-black);
     transition: all 250ms ease-in-out;
 }
 
-.btn-enter:hover{
-    color: var(--red);
-    background-color: var(--grey);
+.btn-enter:hover {
+    color: var(--green);
+    background-color: var(--T-ultradark-grey);
     box-shadow: 0px 0px 3px var(--dark-grey);
     transition: all 250ms ease-in-out;
 }
 
-.btn-enter:active{
-    color: var(--dark-red);
+.btn-enter:active {
     box-shadow: none;
 }
 
-.btn-enter:focus{
+.btn-enter:focus {
     outline: none;
 }
 
-.btn-enter:disabled{
+.btn-enter:disabled {
     opacity: 25%;
+    color: var(--dark-red);
 }
 
-.btn-enter:disabled:hover{
+.btn-enter:disabled:hover {
     color: var(--silver);
     background-color: var(--dark-grey);
     box-shadow: 1px 1px 5px 2px var(--almost-black);
     transition: all 250ms ease-in-out;
 }
 
-.status-bar{
+.status-bar {
     transition: all 250ms ease-in-out;
 }
 
-.output-box{
+.output-box {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
-    min-height: 4rem;
+    min-height: 3rem;
     transition: all 250ms ease-in-out;
+    margin: auto 6rem;
+    padding: 0.5rem;
+    opacity: 0%;
+    text-align: center;
+    transition: all 250ms;
 }
