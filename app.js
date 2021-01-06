@@ -4,8 +4,6 @@ var inputPaid = document.querySelector("#billPaid");
 var output = document.querySelector(".output-box");
 var statusBar = document.querySelector(".status-bar");
 
-//animate status bar somehow
-
 var billAmount = 0,
     billPaid = 0;
 var notes = [{
